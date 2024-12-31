@@ -1,4 +1,5 @@
 # Complaint Portal
+https://darckie.github.io/CompliantPortal/
 
 ## Description
 A web-based complaint management system where consumers can report issues, and agents can track, manage, and resolve complaints efficiently.
@@ -29,4 +30,10 @@ A web-based complaint management system where consumers can report issues, and a
 
 1. **Clone the repository**:
    ```bash
-   https://darckie.github.io/CompliantPortal/
+   git clone https://github.com/Darckie/CompliantPortal.git
+2. **Install dependencies:**:
+   ```bash
+   npm install
+2. **Start the development server**:
+   ```bash
+   npm run dev
