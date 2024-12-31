@@ -117,24 +117,24 @@ const Home = () => {
         <>
 
 
-            <div style={{ backgroundColor: 'white', margin: '0px', overflow: 'hidden' }} className='hero'>
-                <ImgCont>
+            <div  style={{ backgroundColor: 'white', margin: '0px', overflow: 'hidden' }} className='hero homehero'>
+                <ImgCont  id="homeimgcount">
                     {/* <h3 className='heading'>
                     Register Your Complaint
                 </h3> */}
-                    <Container>
-                        <Box>
-                            <h1>Public Compliant Web Portal</h1>
-                            <p>Empowering citizens to voice concerns and track resolutions for a better communit.
+                    <Container id="homebox">
+                        <Box id="homebox2" >
+                            <h1 id="homeH1">Public Complaint Web Portal</h1>
+                            <p id="homepara">Empowering citizens to voice concerns and track resolutions for a better community.
                             </p>
-                            <span style={{ color: 'red', fontSize: '13.5px', fontWeight: '500' }}>(Please note that some functions may not work as intended.) </span>
+                            <span id="homespan" style={{ color: 'red', fontSize: '13.5px', fontWeight: '500' }}>(Please note that some functions may not work as intended.) </span>
                             <ButtonContext>
 
                                 <button onClick={gotocomplaint} className='btn'>Explore</button>
                                 <button onClick={gotocomplaint2} style={{ borderColor: '#312f', backgroundColor: 'rgb(84 91 84)', color: 'lightblue' }} className='btn btn2'>Complaint</button>
                             </ButtonContext>
                         </Box>
-                        <img src={homebackground} alt="Background" />
+                        <img id="homeimg" src={homebackground} alt="Background" />
 
                     </Container>
 
