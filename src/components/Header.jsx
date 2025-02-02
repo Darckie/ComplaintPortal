@@ -127,7 +127,7 @@ export default function Header() {
 
 
   const fnctogoback = () => {
-    navigate("/CompliantPortal/");
+    navigate("/ComplaintPortal/");
 
   }
 

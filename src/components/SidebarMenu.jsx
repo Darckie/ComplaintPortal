@@ -46,13 +46,13 @@ function SidebarMenu() {
             <span
               title={getLabel('Complaint', 'शिकायत')}
               className={
-                isActive('/CompliantPortal/') ||
-                isActive('/CompliantPortal/ComplaintBoard') ||
-                isActive('/CompliantPortal/RegisteredInNccrp') ||
-                isActive('/CompliantPortal/PendingComplaints') ||
-                isActive('/CompliantPortal/NewRegComplaint') ||
-                isActive('/CompliantPortal/TodaysComplaint') ||
-                isActive('/CompliantPortal/NewComplaint') 
+                isActive('/ComplaintPortal/') ||
+                isActive('/ComplaintPortal/ComplaintBoard') ||
+                isActive('/ComplaintPortal/RegisteredInNccrp') ||
+                isActive('/ComplaintPortal/PendingComplaints') ||
+                isActive('/ComplaintPortal/NewRegComplaint') ||
+                isActive('/ComplaintPortal/TodaysComplaint') ||
+                isActive('/ComplaintPortal/NewComplaint') 
                   ? 'complaint-label activePageItem' 
                   : 'complaint-label'
               }
@@ -64,62 +64,62 @@ function SidebarMenu() {
         >
           {/* <MenuItem
             title={getLabel('Home', 'होम')}
-            className={isActive('/CompliantPortal/') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/" />}
+            className={isActive('/ComplaintPortal/') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/" />}
           >
             {getLabel('Home', 'होम')}
           </MenuItem> */}
           <MenuItem
             title={getLabel('Dashboard', 'डैशबोर्ड')}
-            className={isActive('/CompliantPortal/Dashboard') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/Dashboard" />}
+            className={isActive('/ComplaintPortal/Dashboard') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/Dashboard" />}
           >
             {getLabel('Dashboard', 'डैशबोर्ड')}
           </MenuItem>
           <MenuItem
             title={getLabel("Today's Complaints", 'आज की शिकायतें')}
-            className={isActive('/CompliantPortal/TodaysComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/TodaysComplaint" />}
+            className={isActive('/ComplaintPortal/TodaysComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/TodaysComplaint" />}
           >
             {getLabel("Today's Complaints", 'आज की शिकायतें')}
           </MenuItem>
           
           <MenuItem
             title={getLabel('Complaint Board', 'शिकायत बोर्ड')}
-            className={isActive('/CompliantPortal/ComplaintBoard') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/ComplaintBoard" />}
+            className={isActive('/ComplaintPortal/ComplaintBoard') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/ComplaintBoard" />}
           >
             {getLabel('Complaint Board', 'शिकायत बोर्ड')}
           </MenuItem>
 
           <MenuItem
             title={getLabel('New Complaint', 'नई शिकायत')}
-            className={isActive('/CompliantPortal/NewComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/NewComplaint" />}
+            className={isActive('/ComplaintPortal/NewComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/NewComplaint" />}
           >
             {getLabel('New Complaint', 'नई शिकायत')}
           </MenuItem>
 
           <MenuItem
             title={getLabel("Today's Complaints", 'आज की शिकायतें')}
-            className={isActive('/CompliantPortal/TodaysComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/TodaysComplaint" />}
+            className={isActive('/ComplaintPortal/TodaysComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/TodaysComplaint" />}
           >
             {getLabel("Today's Complaints", 'आज की शिकायतें')}
           </MenuItem>
 
           <MenuItem
             title={getLabel('New Registered Complaints', 'नई पंजीकृत शिकायतें')}
-            className={isActive('/CompliantPortal/NewRegComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/NewRegComplaint" />}
+            className={isActive('/ComplaintPortal/NewRegComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/NewRegComplaint" />}
           >
             {getLabel('New Registered Complaints', 'नई पंजीकृत शिकायतें')}
           </MenuItem>
 
           <MenuItem
             title={getLabel('Pending Registered Complaints', 'लंबित पंजीकृत शिकायतें')}
-            className={isActive('/CompliantPortal/PendingComplaints') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/PendingComplaints" />}
+            className={isActive('/ComplaintPortal/PendingComplaints') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/PendingComplaints" />}
           >
             {getLabel('Pending Registered Complaints', 'लंबित पंजीकृत शिकायतें')}
           </MenuItem>
@@ -130,7 +130,7 @@ function SidebarMenu() {
         <SubMenu
           className="menuItem"
           label={
-            <span className={isActive('/CompliantPortal/TrackComplaint') ? 'complaint-label activePageItem' : 'complaint-label'}>
+            <span className={isActive('/ComplaintPortal/TrackComplaint') ? 'complaint-label activePageItem' : 'complaint-label'}>
               <TimelineOutlined titleAccess={getLabel('Track Complaint', 'शिकायत ट्रैक करें')} className='iconS' /> 
               {!collapsed && getLabel('Track Complaint', 'शिकायत ट्रैक करें')}
             </span>
@@ -138,8 +138,8 @@ function SidebarMenu() {
         >
           <MenuItem
             title={getLabel('Track My Complaint', 'मेरी शिकायत ट्रैक करें')}
-            className={isActive('/CompliantPortal/TrackComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
-            component={<Link to="/CompliantPortal/TrackComplaint" />}
+            className={isActive('/ComplaintPortal/TrackComplaint') ? 'menuItem subItem activePage' : 'menuItem subItem'}
+            component={<Link to="/ComplaintPortal/TrackComplaint" />}
           >
             {getLabel('Track My Complaint', 'मेरी शिकायत ट्रैक करें')}
           </MenuItem>
@@ -148,7 +148,7 @@ function SidebarMenu() {
         <SubMenu
           className="menuItem"
           label={
-            <span className={isActive('/CompliantPortal/CallDetails') || isActive('/CompliantPortal/Apr') ? 'complaint-label activePageItem' : 'complaint-label'}>
+            <span className={isActive('/ComplaintPortal/CallDetails') || isActive('/ComplaintPortal/Apr') ? 'complaint-label activePageItem' : 'complaint-label'}>
               <Assignment titleAccess={getLabel('Productivity', 'उत्पादकता')} className='iconS' /> 
               {!collapsed && getLabel('Productivity', 'उत्पादकता')}
             </span>

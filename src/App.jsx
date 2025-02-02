@@ -63,7 +63,7 @@ function App() {
   const [hasNavigated, setHasNavigated] = useState(false);
 
   // Check if the current path is the home page
-  const isHomePage = location.pathname === '/CompliantPortal/';
+  const isHomePage = location.pathname === '/ComplaintPortal/';
 
   return (
     <ViewPort>
@@ -73,17 +73,17 @@ function App() {
 
       {/* Define Routes */}
       <Routes>
-        <Route path="/CompliantPortal/" element={<Home />} />
-        <Route path="/CompliantPortal/TrackComplaint" element={<TrackComplaint />} />
-        <Route path="/CompliantPortal/TodaysComplaint" element={<TodaysComplaint />} />
-        <Route path="/CompliantPortal/NewComplaint" element={<NewComplaintLvel1 />} />
-        <Route path="/CompliantPortal/NewRegComplaint" element={<NewRegComplaint />} />
-        <Route path="/CompliantPortal/RegisteredInNccrp" element={<RegisteredInNccrp />} />
-        <Route path="/CompliantPortal/PendingComplaints" element={<PendingComplaints />} />
-        <Route path="/CompliantPortal/ComplaintBoard" element={<ComplaintBoard />} />
-        <Route path="/CompliantPortal/CallDetails" element={<CallDetails />} />
-        <Route path="/CompliantPortal/Apr" element={<Apr />} />
-        <Route path="/CompliantPortal/Dashboard" element={<Dashboard />} />
+        <Route path="/ComplaintPortal/" element={<Home />} />
+        <Route path="/ComplaintPortal/TrackComplaint" element={<TrackComplaint />} />
+        <Route path="/ComplaintPortal/TodaysComplaint" element={<TodaysComplaint />} />
+        <Route path="/ComplaintPortal/NewComplaint" element={<NewComplaintLvel1 />} />
+        <Route path="/ComplaintPortal/NewRegComplaint" element={<NewRegComplaint />} />
+        <Route path="/ComplaintPortal/RegisteredInNccrp" element={<RegisteredInNccrp />} />
+        <Route path="/ComplaintPortal/PendingComplaints" element={<PendingComplaints />} />
+        <Route path="/ComplaintPortal/ComplaintBoard" element={<ComplaintBoard />} />
+        <Route path="/ComplaintPortal/CallDetails" element={<CallDetails />} />
+        <Route path="/ComplaintPortal/Apr" element={<Apr />} />
+        <Route path="/ComplaintPortal/Dashboard" element={<Dashboard />} />
       </Routes>
     </ViewPort>
   );
